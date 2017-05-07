@@ -1,0 +1,23 @@
+{
+  "name": "ngx-filedropper",
+  "version": "1.0.0",
+  "description": "An angular file-dropper directive/component with image and pdf support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hevans90/ngx-filedropper.git"
+  },
+  "keywords": [
+    "ngx",
+    "filedrop"
+  ],
+  "author": "Harrison Evans <hevans9000@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hevans90/ngx-filedropper/issues"
+  },
+  "homepage": "https://github.com/hevans90/ngx-filedropper#readme"
+}
