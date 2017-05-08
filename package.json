@@ -4,7 +4,11 @@
   "description": "An angular file-dropper directive/component with image and pdf support",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/filedropper.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/filedropper.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,36 @@
   "bugs": {
     "url": "https://github.com/hevans90/ngx-filedropper/issues"
   },
-  "homepage": "https://github.com/hevans90/ngx-filedropper#readme"
+  "homepage": "https://github.com/hevans90/ngx-filedropper#readme",
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.37",
+    "@types/node": "^7.0.0",
+    "chai": "^3.5.0",
+    "codelyzer": "^2.0.0-beta.4",
+    "core-js": "^2.4.1",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "rollup": "^0.41.4",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rxjs": "^5.3.0",
+    "systemjs": "0.19.28",
+    "ts-helpers": "^1.1.2",
+    "ts-node": "^2.0.0",
+    "tslib": "^1.5.0",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5",
+    "uglifyjs": "^2.4.10",
+    "zone.js": "^0.8.4"
+  }
 }

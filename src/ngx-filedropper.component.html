@@ -1,0 +1,50 @@
+<div class="filedrop-parent-container">
+  <div class="filedrop-container">
+    <div class="filedrop-dropzone" filedrop (invalidFileEmitter)="dropzoneTempInvalid()" (filesChangeEmitter)="onFilesChange($event)"
+      [allowed_extensions]="allowedExtensions" [ngClass]="{'filedrop-invalid' : dropzoneInvalid }">
+      <div *ngIf="!dropzoneInvalid">
+        Drop your file here!
+      </div>
+      <div *ngIf="dropzoneInvalid">
+        Invalid file dropped!
+      </div>
+    </div>
+  </div>
+  <div class="filedrop-thumbnails-container">
+    <div class="filedrop-thumbnail" *ngFor="let thumbnail of thumbnails; let i = index">
+
+      <div class="filedrop-close" (click)="deleteFile(i)">
+        <i class="fa fa-times"></i>
+      </div>
+
+      <img [attr.src]='thumbnails[i]' alt="" />
+
+      <div class="filedrop-thumbnail-info">
+        <div class="filedrop-selected-info">
+          <div class="filedrop-label">
+            File Name:
+          </div>
+          <div>
+            {{currentFiles[i].name}}
+          </div>
+        </div>
+        <div class="filedrop-selected-info">
+          <div class="filedrop-label">
+            Type:
+          </div>
+          <div>
+            {{currentFiles[i].type}}
+          </div>
+        </div>
+        <div class="filedrop-selected-info">
+          <div class="filedrop-label">
+            Size:
+          </div>
+          <div>
+            {{currentFiles[i].size}} bytes
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,8 @@
-dist/
+
+dist/*
+!/dist/package.json
+
+
 bundles/
 
 package/
@@ -9,3 +13,7 @@ example/dist/
 example/npm-debug.log
 example/node_modules/
 .vscode/
+
+**/*.ngfactory.ts
+**/*.shim.ngstyle.ts
+**/*.ngsummary.json
