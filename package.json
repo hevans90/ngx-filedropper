@@ -1,6 +1,6 @@
 {
   "name": "ngx-filedropper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An angular file-dropper directive/component with image and pdf support",
   "main": "index.js",
   "scripts": {
