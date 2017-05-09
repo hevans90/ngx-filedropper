@@ -1,0 +1,26 @@
+{
+  "name": "ngx-filedropper",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hevans90/ngx-filedropper.git"
+  },
+  "author": {
+    "name": "Harrison Evans",
+    "email": "hevans9000@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hevans90/ngx-filedropper.git/issues"
+  },
+  "module": "ngx-filedropper.js",
+  "typings": "ngx-filedropper.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

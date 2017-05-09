@@ -20,7 +20,7 @@ export class NgxFiledropperComponent implements OnInit {
   public dropzoneInvalid: boolean = false;
   public allowedExtensions: Array<string>;
 
-  private pdfLogo = require('../assets/pdf_logo.png');
+  private pdfLogo = require('./assets/pdf_logo.png');
 
   public allowedDocExtenstions = ['pdf'];
   public allowedImageExtensions = ['jpg', 'jpeg', 'bmp', 'png', 'gif'];
