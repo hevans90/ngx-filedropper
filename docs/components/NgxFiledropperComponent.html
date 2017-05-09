@@ -1,0 +1,995 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-filedropper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-filedropper</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">ngx-filedropper</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/NgxFiledropperModule.html" >NgxFiledropperModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/NgxFiledropperComponent.html"  data-type="entity-link" class="active" >NgxFiledropperComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-directives-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/NgxFiledropperDirective.html" >NgxFiledropperDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">ngx-filedropper</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/NgxFiledropperModule.html" >NgxFiledropperModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/NgxFiledropperComponent.html"  data-type="entity-link" class="active" >NgxFiledropperComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#directives-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/NgxFiledropperDirective.html" >NgxFiledropperDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NgxFiledropperComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/ngx-filedropper.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-filedrop</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>ngx-filedropper.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ngx-filedropper.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/ngx-filedropper.component.ts:9</a></div>
+                            </td>
+                        </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> ngOnInit</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/ngx-filedropper.component.ts:13</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> onFilesChange</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>onFilesChange(file: File)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/ngx-filedropper.component.ts:29</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> deleteFile</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>deleteFile(i: number)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/ngx-filedropper.component.ts:49</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> dropzoneTempInvalid</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>dropzoneTempInvalid()</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/ngx-filedropper.component.ts:54</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> readFile</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>readFile(file: File, reader: FileReader, callback: any)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/ngx-filedropper.component.ts:62</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> parsePdf</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>parsePdf(file: File)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/ngx-filedropper.component.ts:70</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> buildThumbnail</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>buildThumbnail(file: File)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/ngx-filedropper.component.ts:78</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b> resize</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>resize(img: any, MAX_WIDTH: number, MAX_HEIGHT: number, callback: any)</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/ngx-filedropper.component.ts:98</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns: </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> allowedDocExtenstions</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>allowedDocExtenstions:     <code>string[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/ngx-filedropper.component.ts:25</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> allowedExtensions</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>allowedExtensions:     <code>string[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/ngx-filedropper.component.ts:21</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> allowedImageExtensions</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>allowedImageExtensions:     <code>string[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/ngx-filedropper.component.ts:26</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> currentFiles</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>currentFiles:     <code>File[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/ngx-filedropper.component.ts:17</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> dropzoneInvalid</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>dropzoneInvalid:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value: </i><code>false</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/ngx-filedropper.component.ts:20</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Private</span> pdfLogo</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>pdfLogo:     <code>any</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/ngx-filedropper.component.ts:23</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Public</span> thumbnails</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>thumbnails:     <code>any[]</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/ngx-filedropper.component.ts:18</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+    </section>
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-filedrop&#x27;,
+  templateUrl: &#x27;./ngx-filedropper.component.html&#x27;,
+  styleUrls: [&#x27;./ngx-filedropper.component.scss&#x27;]
+})
+
+export class NgxFiledropperComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+    this.allowedExtensions &#x3D; this.allowedDocExtenstions.concat(this.allowedImageExtensions);
+  }
+
+  public currentFiles: Array&lt;File&gt; &#x3D; [];
+  public thumbnails: any[] &#x3D; [];
+
+  public dropzoneInvalid: boolean &#x3D; false;
+  public allowedExtensions: Array&lt;string&gt;;
+
+  private pdfLogo &#x3D; require(&#x27;./assets/pdf_logo.png&#x27;);
+
+  public allowedDocExtenstions &#x3D; [&#x27;pdf&#x27;];
+  public allowedImageExtensions &#x3D; [&#x27;jpg&#x27;, &#x27;jpeg&#x27;, &#x27;bmp&#x27;, &#x27;png&#x27;, &#x27;gif&#x27;];
+
+
+  onFilesChange(file: File) {
+
+    if (this.currentFiles.filter(x &#x3D;&gt; x.name &#x3D;&#x3D; file.name).length) {
+      this.dropzoneTempInvalid();
+    }
+
+    if (!this.dropzoneInvalid) {
+      this.currentFiles.push(file);
+
+      let ext &#x3D; file.name.split(&#x27;.&#x27;)[file.name.split(&#x27;.&#x27;).length - 1];
+
+      if (this.allowedImageExtensions.filter(x &#x3D;&gt; x &#x3D;&#x3D;&#x3D; ext).length) {
+        this.buildThumbnail(file);
+      } else if (this.allowedDocExtenstions.filter(x &#x3D;&gt; x &#x3D;&#x3D;&#x3D; ext).length) {
+        this.parsePdf(file);
+      }
+
+    }
+  }
+
+  deleteFile(i: number) {
+    this.thumbnails.splice(i, 1);
+    this.currentFiles.splice(i, 1);
+  }
+
+  dropzoneTempInvalid() {
+    this.dropzoneInvalid &#x3D; true;
+    setTimeout(() &#x3D;&gt; {
+      this.dropzoneInvalid &#x3D; false;
+    }, 1500);
+  }
+
+
+  readFile(file: File, reader: FileReader, callback: any) {
+    reader.onload &#x3D; () &#x3D;&gt; {
+      callback(reader.result);
+    }
+
+    reader.readAsDataURL(file);
+  }
+
+  parsePdf(file: File) {
+    let reader &#x3D; new FileReader();
+    this.readFile(file, reader, (result: any) &#x3D;&gt; {
+
+      this.thumbnails.push(this.pdfLogo);
+    });
+  }
+
+  buildThumbnail(file: File) {
+    let reader &#x3D; new FileReader();
+    this.readFile(file, reader, (result: any) &#x3D;&gt; {
+      var img &#x3D; document.createElement(&quot;img&quot;);
+      img.src &#x3D; result;
+
+      // Send this img to the resize function (and wait for callback)
+      this.resize(img, 250, 250, (resized_jpeg: any, before: any, after: any) &#x3D;&gt; {
+
+        // Add the resized jpeg img source to a list for preview
+        // This is also the file you want to upload. (either as a
+        // base64 string or img.src &#x3D; resized_jpeg if you prefer a file). 
+        this.thumbnails.push(resized_jpeg);
+
+        // Read the next file;
+        //this.readFiles(files, index + 1);
+      });
+    })
+  }
+
+  resize(img: any, MAX_WIDTH: number, MAX_HEIGHT: number, callback: any) {
+    // This will wait until the img is loaded before calling this function
+    return img.onload &#x3D; () &#x3D;&gt; {
+
+      // Get the images current width and height
+      var width &#x3D; img.width;
+      var height &#x3D; img.height;
+
+      // Set the WxH to fit the Max values (but maintain proportions)
+      if (width &gt; height) {
+        if (width &gt; MAX_WIDTH) {
+          height *&#x3D; MAX_WIDTH / width;
+          width &#x3D; MAX_WIDTH;
+        }
+      } else {
+        if (height &gt; MAX_HEIGHT) {
+          width *&#x3D; MAX_HEIGHT / height;
+          height &#x3D; MAX_HEIGHT;
+        }
+      }
+
+      // create a canvas object
+      var canvas &#x3D; document.createElement(&quot;canvas&quot;);
+
+      // Set the canvas to the new calculated dimensions
+      canvas.width &#x3D; width;
+      canvas.height &#x3D; height;
+      var ctx &#x3D; canvas.getContext(&quot;2d&quot;);
+
+      if (ctx) {
+        ctx.drawImage(img, 0, 0, width, height);
+      }
+
+      // Get this encoded as a jpeg
+      // IMPORTANT: &#x27;jpeg&#x27; NOT &#x27;jpg&#x27;
+      var dataUrl &#x3D; canvas.toDataURL(&#x27;image/jpeg&#x27;);
+
+      // callback with the results
+      callback(dataUrl, img.src.length, dataUrl.length);
+    };
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;filedrop-parent-container&quot;&gt;
+  &lt;div class&#x3D;&quot;filedrop-container&quot;&gt;
+    &lt;div class&#x3D;&quot;filedrop-dropzone&quot; filedrop (invalidFileEmitter)&#x3D;&quot;dropzoneTempInvalid()&quot; (filesChangeEmitter)&#x3D;&quot;onFilesChange($event)&quot;
+      [allowed_extensions]&#x3D;&quot;allowedExtensions&quot; [ngClass]&#x3D;&quot;{&#x27;filedrop-invalid&#x27; : dropzoneInvalid }&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;!dropzoneInvalid&quot;&gt;
+        Drop your file here!
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;dropzoneInvalid&quot;&gt;
+        Invalid file dropped!
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;filedrop-thumbnails-container&quot;&gt;
+    &lt;div class&#x3D;&quot;filedrop-thumbnail&quot; *ngFor&#x3D;&quot;let thumbnail of thumbnails; let i &#x3D; index&quot;&gt;
+
+      &lt;div class&#x3D;&quot;filedrop-close&quot; (click)&#x3D;&quot;deleteFile(i)&quot;&gt;
+        &lt;i class&#x3D;&quot;fa fa-times&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+
+      &lt;img [attr.src]&#x3D;&#x27;thumbnails[i]&#x27; alt&#x3D;&quot;&quot; /&gt;
+
+      &lt;div class&#x3D;&quot;filedrop-thumbnail-info&quot;&gt;
+        &lt;div class&#x3D;&quot;filedrop-selected-info&quot;&gt;
+          &lt;div class&#x3D;&quot;filedrop-label&quot;&gt;
+            File Name:
+          &lt;/div&gt;
+          &lt;div&gt;
+            {{currentFiles[i].name}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;filedrop-selected-info&quot;&gt;
+          &lt;div class&#x3D;&quot;filedrop-label&quot;&gt;
+            Type:
+          &lt;/div&gt;
+          &lt;div&gt;
+            {{currentFiles[i].type}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;filedrop-selected-info&quot;&gt;
+          &lt;div class&#x3D;&quot;filedrop-label&quot;&gt;
+            Size:
+          &lt;/div&gt;
+          &lt;div&gt;
+            {{currentFiles[i].size}} bytes
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="filedrop-parent-container">  <div class="filedrop-container">    <div class="filedrop-dropzone" filedrop (invalidFileEmitter)="dropzoneTempInvalid()" (filesChangeEmitter)="onFilesChange($event)"      [allowed_extensions]="allowedExtensions" [ngClass]="{\'filedrop-invalid\' : dropzoneInvalid }">      <div *ngIf="!dropzoneInvalid">        Drop your file here!      </div>      <div *ngIf="dropzoneInvalid">        Invalid file dropped!      </div>    </div>  </div>  <div class="filedrop-thumbnails-container">    <div class="filedrop-thumbnail" *ngFor="let thumbnail of thumbnails; let i = index">      <div class="filedrop-close" (click)="deleteFile(i)">        <i class="fa fa-times"></i>      </div>      <img [attr.src]=\'thumbnails[i]\' alt="" />      <div class="filedrop-thumbnail-info">        <div class="filedrop-selected-info">          <div class="filedrop-label">            File Name:          </div>          <div>            {{currentFiles[i].name}}          </div>        </div>        <div class="filedrop-selected-info">          <div class="filedrop-label">            Type:          </div>          <div>            {{currentFiles[i].type}}          </div>        </div>        <div class="filedrop-selected-info">          <div class="filedrop-label">            Size:          </div>          <div>            {{currentFiles[i].size}} bytes          </div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'NgxFiledropperComponent', 'selector': 'app-filedrop'}];
+    var DIRECTIVES = [{'name': 'NgxFiledropperDirective', 'selector': '[filedrop]'}];
+    var ACTUAL_COMPONENT = {'name': 'NgxFiledropperComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
