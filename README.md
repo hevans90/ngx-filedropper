@@ -61,6 +61,10 @@ To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 $ npm run build
 ```
 
+```bash
+$ npm run copyassets
+```
+
 To lint all `*.ts` files:
 
 ```bash
